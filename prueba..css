@@ -272,19 +272,40 @@ nav li {
 
 
 /* Hacer que el diseño sea responsive */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column; /* Cambiar la dirección a columna en pantallas pequeñas */
-        text-align: center; /* Alinear el texto al centro */
+/* Estilos para pantallas medianas y grandes (tabletas y ordenadores) */
+@media (min-width: 768px) {
+    .login-container {
+        width: 400px;
+        margin: 0 auto;
     }
 
-    h1 {
-        text-align: center; /* Alinear el texto al centro */
-        margin: 10px 0; /* Añadir márgenes superiores e inferiores */
+    #flex-container5 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
-    nav li {
-        display: block; /* Mostrar los elementos de la lista en bloque */
-        margin: 10px 0; /* Márgenes superiores e inferiores */
+    #flex-container5 > div {
+        width: 22%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilos para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 767px) {
+    .login-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #flex-container5 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #flex-container5 > div {
+        width: 45%;
+        margin-bottom: 20px;
     }
 }
